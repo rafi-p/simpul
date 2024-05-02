@@ -1,13 +1,54 @@
+:root {
+  --primary-blue: #2F80ED; 
+  --primary-dark-grey: #4F4F4F; 
+  --primary-light-grey: #828282; 
+  --primary-white: #E0E0E0; 
+
+  --indicator-orange: #F8B76B; 
+  --indicator-purple: #8785FF; 
+  --indicator-red: #EB5757; 
+  --indicator-yellow: #F2C94C; 
+
+  --chats-light-orange: #FCEED3; 
+  --chats-dark-orange: #E5A443; 
+  --chats-light-purple: #EEDCFF; 
+  --chats-dark-purple: #9B51E0; 
+  --chats-light-green: #D2F2EA; 
+  --chats-dark-green: #43B78D; 
+
+  --stickers-grey: #E9F3FF; 
+  --stickers-orange: #FDCFA4; 
+  --stickers-light-orange: #F9E9C3; 
+  --stickers-dark-green: #AFEBDB; 
+  --stickers-light-green: #CBF1C2; 
+  --stickers-light-purple: #CFCEF9; 
+  --stickers-pink: #F9E0FD; 
+
+  --font-size-small: 12px;
+  --font-size-medium: 14px;
+  --font-size-large: 16px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Lato', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bold-text {
+  font-weight: 700
 }
+
+.small-text {
+  font-size: var(--font-size-small);
+}
+
+.medium-text {
+  font-size: var(--font-size-medium);
+}
+
+.large-text {
+  font-size: var(--font-size-large);
+}
+
