@@ -1,0 +1,55 @@
+.circular-toggle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+    position: relative;
+}
+
+.base-toggle {
+    width: 68px; 
+    height: 68px; 
+}
+
+.child-toggle {
+    width: 60px; 
+    height: 60px; 
+    background-color: var(--primary-whitest);
+}
+
+.child-toggle img {
+    width: 26px;
+    height: 26px;   
+}
+
+.text-toggle {
+    position: absolute;
+    top: -24px;
+    color:var(--primary-whitest)
+}
+
+.active-toggle {
+    background-color: var(--primary-white);
+}
+
+.bg-blue {
+    background-color: var(--primary-blue);
+}
+
+.bg-orange {
+    background-color: var(--indicator-orange);
+}
+.bg-purple {
+    background-color: var(--indicator-purple);
+}
+
+.bg-dark-grey {
+    background-color: var(--primary-dark-grey);
+}
+
+.base-toggle-hide {
+    position: absolute;
+    right: 15px;
+    z-index: -1;
+}

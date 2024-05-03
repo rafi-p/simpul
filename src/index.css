@@ -3,6 +3,7 @@
   --primary-dark-grey: #4F4F4F; 
   --primary-light-grey: #828282; 
   --primary-white: #E0E0E0; 
+  --primary-whitest: #F2F2F2;
 
   --indicator-orange: #F8B76B; 
   --indicator-purple: #8785FF; 
@@ -34,6 +35,7 @@ body {
   font-family: 'Lato', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #292929;
 }
 
 .bold-text {

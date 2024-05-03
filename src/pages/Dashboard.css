@@ -1,0 +1,12 @@
+.toggle-wrapper {
+    position: fixed; 
+    bottom: 27px; 
+    right: 34px;
+    display: flex;
+    column-gap: 26px;
+    align-items: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
