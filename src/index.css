@@ -25,6 +25,9 @@
   --stickers-light-purple: #CFCEF9; 
   --stickers-pink: #F9E0FD; 
 
+  --loading-fill: #C4C4C4; 
+  --loading-non-fill: #F8F8F8;
+
   --font-size-small: 12px;
   --font-size-medium: 14px;
   --font-size-large: 16px;

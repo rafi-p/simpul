@@ -1,11 +1,19 @@
 import React, {Fragment, useState} from 'react'
 import './Dashboard.css'
 
-import {CustomToggle} from '../components'
+import {CustomToggle ,PopOut} from '../components'
+import { useDataContext } from '../hooks/useDataContext'
 
 function Dashboard() {
     const [toggle, setToggle] = useState(false)
-    const [activeToggle, setActiveToggle] = useState('')
+    const { activeToggle, dispatch} = useDataContext()
+
+    const setActiveToggle = (value) => {
+        dispatch({
+            type: 'SET_ACTIVE_TOGGLE',
+            payload: value
+        })
+    }
 
     const handleClick = () => {
         setActiveToggle('')
@@ -36,7 +44,10 @@ function Dashboard() {
                         </Fragment>
                 }
                 <CustomToggle onClick={handleClick} active={activeToggle !== ''}/>
-
+                {
+                    activeToggle &&
+                        <PopOut />
+                }
             </div>
         </div>
     )
