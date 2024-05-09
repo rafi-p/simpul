@@ -2,11 +2,11 @@ import React from 'react';
 import './Loader.css';
 import { useDataContext } from '../../hooks/useDataContext';
 
-export function Loader() {
+export default function Loader() {
     const { activeToggle } = useDataContext();
 
     const textLoading = (value) => {
-        if (activeToggle === 'task') {
+        if (value === 'task') {
             return 'Tasks List';
         }
         return 'Chats';

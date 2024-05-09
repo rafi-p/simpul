@@ -1,0 +1,11 @@
+.btn-custom {
+    height: 100%;
+    width: 100%;
+    padding: 14px 21px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

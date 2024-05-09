@@ -4,7 +4,10 @@ import CustomToggle from "./CustomToggle";
 import List from "./List";
 import Message from "./Message";
 import PopOut from "./PopOut";
-import { Loader } from "./Loader";
+import Loader from "./Loader";
+import SearchBar from "./SearchBar";
+import MessageList from "./MessageList";
+import DetailChat from "./DetailChat";
 
 // Export all the components
 export {
@@ -14,5 +17,8 @@ export {
     List,
     Message,
     PopOut,
-    Loader
+    Loader,
+    SearchBar,
+    MessageList,
+    DetailChat
 };
