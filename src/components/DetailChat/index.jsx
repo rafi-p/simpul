@@ -3,6 +3,7 @@ import { backArrowIcon, closeIcon, threeDotGreyIcon } from '../../assets/icons';
 import { CustomBtn } from '../index'
 import formatDateTime from '../../utils/formatDateTime';
 import './DetailChat.css';
+import { useDataContext } from '../../hooks/useDataContext';
 
 const dataChat = Array.from({ length: 100 }, (_, index) => index + 1);
 
@@ -41,11 +42,20 @@ const chatDetailData = {
 
 
 export default function DetailChat() {
+    const { dispatch} = useDataContext()
+
+    const setMessageID = () => {
+        dispatch({
+            type: 'SET_MESSAGE_ID',
+            payload: ''
+        })
+    }
+
     return (
         <div className="detail-chat-wrapper">
             <div className="top-heading-detail-chat">
                 <div className="left-heading">
-                    <img src={backArrowIcon} alt="back-icon" />
+                    <img src={backArrowIcon} alt="back-icon" onClick={setMessageID}/>
                     <div className="heading-detail-wrapper">
                         <span 
                             className='bold-text text-blue font-size-large'

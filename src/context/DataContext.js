@@ -9,6 +9,11 @@ export const dataReducer = (state, action) => {
                 ...state,
                 activeToggle: action.payload
             }
+        case 'SET_MESSAGE_ID':
+            return {
+                ...state,
+                messageID: action.payload
+            }
         default:
             return state
     }
@@ -17,7 +22,8 @@ export const dataReducer = (state, action) => {
 
 export const DataContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(dataReducer, {
-        activeToggle: ''
+        activeToggle: '',
+        messageID: ''
     })
 
     return (

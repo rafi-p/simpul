@@ -1,20 +1,35 @@
 import React from 'react'
 import {userIcon} from '../../assets/icons'
 import formatDateTime from '../../utils/formatDateTime'
+import { useDataContext } from '../../hooks/useDataContext'
+
 
 // styles
 import './Message.css'
 
 function Message() {
+    const { dispatch} = useDataContext()
+
+    const setMessageID = (value) => {
+        dispatch({
+            type: 'SET_MESSAGE_ID',
+            payload: value
+        })
+    }
 
     const participants = [
         {
             name: 'John Doe',
-            role: 'Admin'
+            role: 'Admin',
         },
     ]
+
+    const handleClick = () => {
+        setMessageID('tes')
+    }
+
     return (
-        <div className='message-content'>
+        <div className='message-content' onClick={handleClick}>
             <div className="user-chat">
                     {
                         participants.slice(Math.max(participants.length - 2, 0)).map((participant, index) =>
